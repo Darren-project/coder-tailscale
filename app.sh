@@ -1,7 +1,7 @@
 #!/bin/bash
 VERSION="4.12.0"
 apt install --yes --force-yes curl 
-if [ -d "/app/coder2/bin/temp" ] 
+if [ -d "/app/coder2/bin/" ] 
 then
     echo "Directory /app/coder2/bin exists." 
     PATH="/app/coder2/bin:$PATH"
