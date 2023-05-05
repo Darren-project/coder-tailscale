@@ -5,6 +5,7 @@ if [ -d "/app/coder2/bin/" ]
 then
     echo "Directory /app/coder2/bin exists." 
     PATH="/app/coder2/bin:$PATH"
+    cat /app/coder2/config
     code-server --config /app/coder2/config
 else
     echo "Error: Directory /app/coder2/bin does not exists."
