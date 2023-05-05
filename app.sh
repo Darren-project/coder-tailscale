@@ -16,3 +16,4 @@ else
     ln -s /app/coder2/code-server-$VERSION/bin/code-server /app/coder2/bin/code-server
     PATH="/app/coder2/bin:$PATH"
     code-server --config /app/coder2/config
+fi
