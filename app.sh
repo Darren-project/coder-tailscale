@@ -1,12 +1,12 @@
 apt install --yes --force-yes curl 
-if [ -d "/app/" ] 
+if [ -d "/app/bin" ] 
 then
-    echo "Directory /app/ exists." 
+    echo "Directory /app/bin exists." 
     PATH="/app/bin:$PATH"
     code-server --config /app/config &
     cat /app/config/config.yml
 else
-    echo "Error: Directory /app/ does not exists."
+    echo "Error: Directory /app/bin does not exists."
     mkdir -p /app/lib /app/bin
     curl -fL https://github.com/coder/code-server/releases/download/v$VERSION/code-server-$VERSION-linux-amd64.tar.gz \
       | tar -C /app/lib -xz
