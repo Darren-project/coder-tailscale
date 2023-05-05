@@ -1,3 +1,4 @@
+VERSION = "4.12.0"
 apt install --yes --force-yes curl 
 if [ -d "/app/bin" ] 
 then
