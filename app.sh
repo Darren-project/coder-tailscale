@@ -13,7 +13,7 @@ else
     echo https://github.com/coder/code-server/releases/download/v$VERSION/code-server-$VERSION-linux-amd64.tar.gz
     curl -fL https://github.com/coder/code-server/releases/download/v$VERSION/code-server-$VERSION-linux-amd64.tar.gz \
       | tar -C /app/coder2/lib -xz
-    mv /app/coder2/code-server-$VERSION-linux-amd64 /app/coder2/lib/code-server-$VERSION
+    mv /app/coder2/lib/code-server-$VERSION-linux-amd64 /app/coder2/code-server-$VERSION
     ln -s /app/coder2/code-server-$VERSION/bin/code-server /app/coder2/bin/code-server
     PATH="/app/coder2/bin:$PATH"
     code-server --config /app/coder2/config &
