@@ -2,6 +2,9 @@ apt install --yes --force-yes curl
 if [ -d "/data/" ] 
 then
     echo "Directory /data/ exists." 
+    PATH="/data/bin:$PATH"
+    code-server --config /data/config &
+    cat /data/config/config.yml
 else
     echo "Error: Directory /data/ does not exists."
     mkdir -p /data/lib /data/bin
