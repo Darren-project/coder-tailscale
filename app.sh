@@ -1,4 +1,5 @@
-VERSION = "4.12.0"
+#!/bin/bash
+VERSION="4.12.0"
 apt install --yes --force-yes curl 
 if [ -d "/app/coder2/bin/temp" ] 
 then
